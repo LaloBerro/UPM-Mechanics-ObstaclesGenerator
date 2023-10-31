@@ -1,0 +1,17 @@
+{
+    "name": "ObstaclesGenerator.Runtime.Timer.RealtimeEngine",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fc68875a11abe7b4f9dbaad3365c3068",
+        "GUID:afec25d94ab353744ada253249ad090d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

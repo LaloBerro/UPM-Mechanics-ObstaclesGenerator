@@ -1,0 +1,38 @@
+{
+    "name": "ObstaclesGenerator.Tests.PlayMode.Timer",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "ObstaclesGenerator.Runtime.Timer.Domain",
+        "ObstaclesGenerator.Runtime.RandomPicker.Domain",
+        "ObstaclesGenerator.Runtime.Timer.RealtimeEngine",
+        "ObstaclesGenerator.Runtime.Core.Domain",
+        "Timer.Runtime.Core.Domain",
+        "Timer.Runtime.RealtimeTimer.Domain",
+        "Timer.Runtime.RealtimeTimer.InterfaceAdapters.Realtime",
+        "MechanicsObstaclesGenerator.EmptyObstaclesGenerator.Domain",
+        "Spawners.Runtime.EmptySpawner.Domain",
+        "Spawner.Runtime.Core.Domain",
+        "Spawners.Runtime.Core.InterfaceAdapters.Presenters",
+        "Spawners.Runtime.EmptySpawner.InterfaceAdapters.View",
+        "Spawners.Runtime.EmptySpawner.View",
+        "ObjectPool.Runtime.Core.Domain",
+        "ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.Presenters",
+        "ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.RealtimeEngine",
+        "ObjectPool.Runtime.RecyclableObjectPools.View"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

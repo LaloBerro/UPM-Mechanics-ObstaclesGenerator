@@ -1,10 +1,12 @@
 {
-    "name": "Editor",
+    "name": "ObstaclesGenerator.Runtime.Core.Domain",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
+    "references": [
+        "GUID:8adfcfebf0e720a46b081988f0195671",
+        "GUID:0a3ae2ba894d42342b9d7c6348029878",
+        "GUID:afec25d94ab353744ada253249ad090d"
     ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

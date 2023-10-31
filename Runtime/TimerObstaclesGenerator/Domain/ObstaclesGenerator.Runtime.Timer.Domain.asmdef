@@ -1,0 +1,18 @@
+{
+    "name": "ObstaclesGenerator.Runtime.Timer.Domain",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a531ebcbcd39a30439f70579cd9a98ca",
+        "GUID:8adfcfebf0e720a46b081988f0195671",
+        "GUID:afec25d94ab353744ada253249ad090d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

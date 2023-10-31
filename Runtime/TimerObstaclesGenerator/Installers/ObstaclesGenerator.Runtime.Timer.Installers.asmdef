@@ -1,0 +1,22 @@
+{
+    "name": "ObstaclesGenerator.Runtime.Timer.Installers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f7e79faab5d9af5409800f8472025581",
+        "GUID:fc68875a11abe7b4f9dbaad3365c3068",
+        "GUID:a531ebcbcd39a30439f70579cd9a98ca",
+        "GUID:9a72f7cb9eb427f48841ec973b8e4ed2",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:8adfcfebf0e720a46b081988f0195671",
+        "GUID:afec25d94ab353744ada253249ad090d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
