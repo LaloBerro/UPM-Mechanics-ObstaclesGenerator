@@ -1,1 +1,1 @@
-{"dependencies":[]}
+{"dependencies":[{"name":"ObjectPool","gitUrl":"https://github.com/LaloBerro/UPM-ObjectPool.git"},{"name":"Spawner","gitUrl":"https://github.com/LaloBerro/UPM-Spawner.git"},{"name":"Timer","gitUrl":"https://github.com/LaloBerro/UPM-Timer.git"}]}
