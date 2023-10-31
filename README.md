@@ -1,3 +1,3 @@
-# Unity Package Template
+# Obstacle Generator
 
-This is a template for an empty unity package
+<img src="https://raw.githubusercontent.com/LaloBerro/UPM-Mechanics-ObstaclesGenerator/main/DiagramFlow.png" alt="">
