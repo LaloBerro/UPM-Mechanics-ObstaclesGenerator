@@ -5,7 +5,7 @@ using ZenjectExtensions.Zinstallers;
 
 namespace ObstaclesGenerator.Runtime.RandomPicker.Installers
 {
-    public abstract class RandomNumberGetterInstaller<TNumber> : InstanceZinstaller<RandomNumberGetter<TNumber>>
+    public abstract class RandomNumberGetterInstaller<TNumber> : InstanceZinstaller<IRandomGetter<TNumber>>
     {
         [Header("Config")] 
         [SerializeField] private TNumber _minDuration;
@@ -14,7 +14,7 @@ namespace ObstaclesGenerator.Runtime.RandomPicker.Installers
         [Inject]
         private IRandomNumberPicker<TNumber> _randomNumberPicker;
         
-        protected override RandomNumberGetter<TNumber> GetInitializedClass()
+        protected override IRandomGetter<TNumber> GetInitializedClass()
         {
             return new RandomNumberGetter<TNumber>(_minDuration, _maxDuration, _randomNumberPicker);
         }
