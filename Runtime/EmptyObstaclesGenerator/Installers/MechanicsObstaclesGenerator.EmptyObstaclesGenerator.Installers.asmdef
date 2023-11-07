@@ -1,0 +1,22 @@
+{
+    "name": "MechanicsObstaclesGenerator.EmptyObstaclesGenerator.Installers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a6919f8a0a986404b91f947fca119854",
+        "GUID:9a72f7cb9eb427f48841ec973b8e4ed2",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:f7e79faab5d9af5409800f8472025581",
+        "GUID:b314ffd25d6408547920d6f846fa06e7",
+        "GUID:a531ebcbcd39a30439f70579cd9a98ca",
+        "GUID:0a3ae2ba894d42342b9d7c6348029878"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
