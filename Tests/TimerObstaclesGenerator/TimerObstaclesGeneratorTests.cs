@@ -75,8 +75,14 @@ namespace ObstacleGenerator.Tests.PlayMode.Timer
             _spawner = new Spawner<EmptyData>(_spawnerPresenter);
         }
 
+        [TearDown]
+        public void TearDown()
+        {
+            _objectPool = null;
+        }
+
         [UnityTest]
-        public IEnumerator TurnOnObstacleGenerator_Spawn10Objects()
+        public IEnumerator TurnOnObstacleGenerator_Spawn5Objects()
         {
             yield return null;
             
