@@ -5,8 +5,10 @@ using MechanicsObstaclesGenerator.Core.Domain;
 using MechanicsObstaclesGenerator.Timer.Domain;
 using NUnit.Framework;
 using ObjectPool.Runtime.Core.Domain;
+using ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.Observers;
 using ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.Presenters;
 using ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.RealtimeEngine;
+using ObjectPool.Runtime.RecyclableObjectPools.InterfaceAdapters.Repositories;
 using Spawners.Runtime.Core.Domain;
 using Spawners.Runtime.Core.InterfaceAdapters.Presenters;
 using Spawners.Runtime.EmptySpawner.Domain;
@@ -31,6 +33,10 @@ namespace ObstacleGenerator.Tests.PlayMode.Timer
         private ISpawner<EmptyData> _spawner;
         private ISpawnerPresenter<EmptyData> _spawnerPresenter;
         private ISpawnedObjectPresenter<EmptyData, IEmptyObjectView> _spawnedObjectPresenter;
+        
+        private ICustomObjectToRealtimeObjectObserver<IRecyclableObjectView> _customObjectToRealtimeObjectObserver;
+        private IRealtimeObjectRepository<IRecyclableObjectView, GameObject> _realtimeObjectRepository;
+        private IObjectObserver<GameObject> _objectObserver;
         private IObjectPool<IRecyclableObjectView> _objectPool;
 
         [SetUp]
@@ -65,9 +71,12 @@ namespace ObstacleGenerator.Tests.PlayMode.Timer
             GameObject emptyGameObject = new GameObject("prefab");
             emptyGameObject.AddComponent<EmptyObjectView>();
 
-            IGenerator<IRecyclableObjectView> generator =
-                new RecyclableObjectGenerator(parentGameObject.transform, emptyGameObject);
-            _objectPool = new RecyclableObjectPool(generator, 10);
+            _objectObserver = new ObjectObserver<GameObject>();
+            _realtimeObjectRepository = new RealtimeObjectRepository<IRecyclableObjectView, GameObject>();
+            _customObjectToRealtimeObjectObserver = new RecyclableObjectViewToGameObjectObserver(_realtimeObjectRepository, _objectObserver);
+
+            IGenerator<IRecyclableObjectView> generator = new RecyclableObjectGenerator(parentGameObject.transform, emptyGameObject, _realtimeObjectRepository);
+            _objectPool = new RecyclableObjectPool(generator, 10, _customObjectToRealtimeObjectObserver);
 
             _spawnedObjectPresenter = new EmptySpawnedObjectPresenter();
 
